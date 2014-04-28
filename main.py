@@ -1,4 +1,5 @@
 import os
+from code_count import code_count
 
 source_path = './data/'
 database = {}
@@ -58,4 +59,5 @@ if __name__ == "__main__":
         if os.path.isfile(filename):
             parse_file(filename)
             
-    print database
+    #print database
+    code_count(source_path)
